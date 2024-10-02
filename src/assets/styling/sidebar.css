@@ -1,0 +1,196 @@
+.sidebar {
+    background-color: #14142d;
+    color: #12171e;
+    height: 100vh;
+    padding: 20px;
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 121px;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+
+}
+
+.sidebar .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.sidebar .top .logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.sidebar .top .logo #icon {
+    font-size: 28px;
+    color: white;
+}
+
+.sidebar .top .logo span {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.sidebar .top #btn-active {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 44px;
+    right: -12px;;
+}
+
+
+/* NAV */
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #838c9a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    text-wrap: nowrap;
+}
+
+
+
+.sidebar ul li .activelink {
+    color: white;
+}
+
+
+
+.sidebar ul li a:hover {
+
+    color: #ffffff;
+
+}
+
+.sidebar ul li a .bx {
+
+    font-size: 22px;
+    margin-right: 15px;
+
+    vertical-align: sub;
+}
+
+
+.sidebar ul li .tooltip {
+
+    display: none;
+
+}
+
+/* LISTE ORDERS*/
+
+.sidebar ul li .display {
+    display: none;
+}
+
+.sidebar ul li .list-order {
+    margin-left: 36px;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 70%;
+    transition: all 0, 3s ease-in-out;
+}
+
+.sidebar ul li .display {
+    display: none;
+}
+
+
+.sidebar ul li .list-order li {
+    margin-bottom: 0px;
+}
+
+.sidebar ul li .list-order li a {
+    font-size: 13px;
+}
+
+.sidebar ul li .list-order li a {
+    font-size: 13px;
+}
+
+
+.sidebar ul li .activelink .rotate {
+    rotate: 180deg;
+    transition: 0, 3s;
+}
+
+/* SIDEBAR ACTIVE */
+
+.sidebar.active {
+    width: 7%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sidebar.active ~ head-cont{
+    margin-left: 111px;
+}
+
+
+.sidebar.active .nav-item {
+    display: none;
+
+}
+
+.sidebar.active .logo {
+    opacity: 0;
+}
+
+.sidebar.active .users div {
+    opacity: 0;
+}
+
+.sidebar.active .top #btn-active {
+    position: absolute;
+    transform: translate(-50px, 0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar.active ul li a .bx {
+    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 19px;
+    vertical-align: sub;
+}
+
+/* CHANGE LISTE ORDER*/
+
+.sidebar.active ul {
+    position: relative;
+}
+
+.sidebar.active ul li .list-order {
+    left: 12px;
+    width: 138%;
+    padding: 12px;
+    position: absolute;
+    top: 30px;
+    background-color: #0e0e23;
+}
