@@ -26,7 +26,7 @@
 
         </b-form-group>
 
-        <b-button type="submit" variant="light" class="fw-bold w-100" id="button">Login</b-button>
+        <b-button type="submit" variant="light" class="fw-bold w-100" id="button">Log in</b-button>
         <p class="text-center mt-3">Not registered yet? <a href="" @click="$router.push('/')">Sign up here</a></p>
 
       </b-form>
